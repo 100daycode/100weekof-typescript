@@ -120,4 +120,12 @@ console.log(filterCars)
 // find
 // find car with black color
 const findCars = cars.find(e => e.detail.color === 'black')
+console.log(findCars)
 
+// destruct
+let Person = {
+    firstName: 'Fiqry',
+    lastName: 'Choerudin'
+}
+
+let { firstName, lastName }: { firstName: string, lastName: string } = Person
