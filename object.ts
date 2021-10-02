@@ -129,3 +129,18 @@ let Person = {
 }
 
 let { firstName, lastName }: { firstName: string, lastName: string } = Person
+
+// structural type system
+
+// Object
+interface Point {
+    x: number,
+    y: number
+}
+
+function logPoint(p: Point) {
+    console.log(`${p.x} , ${p.y}`)
+}
+
+const point = { x: 12, y: 26 }
+logPoint(point)
